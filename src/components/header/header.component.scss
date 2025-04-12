@@ -1,0 +1,15 @@
+@import "../../styles.scss";
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-links-list{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 400px;
+}
