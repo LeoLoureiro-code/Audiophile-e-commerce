@@ -5,11 +5,48 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $background-secondary;
+    font-family: $font-family;
+    height: 90px;
+    padding: 0 6rem 0 6rem;
+
+    @media screen and (max-width: $tablet) {
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+.logo-ham-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.hamburger-div{
+    display: none;
+
+    @media screen and (max-width: $tablet) {
+        display: block;
+    }
 }
 
 .navigation-links-list{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    width: 400px;
+    width: 450px;
+
+    @media screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: $text-secondary;
+    transition: 0.3s ease-in;
+}
+
+a:hover{
+    color: $color-btn;
 }
