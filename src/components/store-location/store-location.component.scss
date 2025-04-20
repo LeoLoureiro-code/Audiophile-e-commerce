@@ -1,0 +1,77 @@
+@import "../../styles.scss";
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 9rem 0 9rem;
+    font-family: $font-family;
+    margin: 8rem 0 8rem 0;
+
+    @media screen and (max-width: $laptop) {
+        padding: 0 6rem 0 6rem;
+    }
+
+    @media screen and (max-width: $tablet) {
+        flex-direction: column-reverse;
+        padding: 0 2rem 0 2rem;
+    }
+}
+
+.store-description-div, .store-img-div{
+    width: 50%;
+
+    @media screen and (max-width: $tablet) {
+        width: 100%;
+    }
+}
+
+.store-description-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 45px;
+    max-width: 445px;
+    text-transform: uppercase;
+
+    span{
+        color: $color-btn;
+    }
+}
+
+.store-description-paragraph{
+    max-width: 445px;
+    margin-top: 3rem;
+    color: $text;
+    opacity: 0.7;
+    line-height: 1.8rem;
+    font-size: 15px;
+}
+
+.store-img-div{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @media screen and (max-width: $tablet) {
+        height: 300px;
+        margin-bottom: 2rem;
+    }
+
+    img{
+        border-radius: 10px;
+        height: auto;
+        width: 100%;
+        
+        @media screen and (max-width: $tablet) {
+            height: 300px;
+        }
+    }
+}
