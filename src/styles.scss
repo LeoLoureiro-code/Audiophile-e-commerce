@@ -1,5 +1,11 @@
-//Colors
+//Reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+//Colors
 $background-primary: rgb(255, 255, 255);
 $background-secondary: rgb(16, 16, 16);
 $background-tertiary: rgb(241, 241, 241);
@@ -7,3 +13,35 @@ $color-btn: rgb(216, 125, 74);
 $color-btn-secondary: rgb(251, 175, 133);
 $text: rgb(0, 0, 0);
 $text-secondary: rgb(250, 250, 250);
+
+//Font
+
+$font-family: "Manrope", sans-serif;
+
+//Display
+
+$laptop: 1280px;
+$tablet: 800px;
+$mobile: 500px;
+
+//Styles
+.btn{
+    height: 48px;
+    width: 160px;
+    
+}
+
+.btn-primary{
+    color: $text-secondary;
+    background-color: $color-btn;
+}
+
+.btn-secondary{
+    color: $text;
+    background-color: $background-primary;
+}
+
+.btn-tertiary{
+    color: $text;
+    background-color: transparent;
+}
