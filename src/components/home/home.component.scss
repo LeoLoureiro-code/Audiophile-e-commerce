@@ -1,0 +1,21 @@
+@import "../../styles.scss";
+
+section{
+    width: 100%;
+}
+
+.home{
+    height: 729px;
+    background-image: url("../../../public/assets/home/desktop/image-hero.jpg");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: $tablet) {
+       
+    }
+}
+
+.home-img{
+    position: absolute;
+}
