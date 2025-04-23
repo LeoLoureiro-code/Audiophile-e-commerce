@@ -3,7 +3,7 @@
 footer{
     height: 365px;
     width: 100%;
-    // position: absolute;
+    position: relative;
     bottom: 0;
     background-color: $background-secondary;
     display: flex;
@@ -50,7 +50,7 @@ footer{
 
 }
 
-.navigation-links-list{
+.footer-navigation-links-list{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
@@ -63,6 +63,7 @@ footer{
         max-width: 500px;
     }
 }
+
 
 .social-media-div{
     width: 150px;
