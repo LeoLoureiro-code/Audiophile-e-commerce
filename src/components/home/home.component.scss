@@ -1,10 +1,17 @@
 @import "../../styles.scss";
 
-section{
-    width: 100%;
+:host {
+    display: block;
+    background-color: $background-hero;
 }
 
-.home{
+section {
+    width: 100%; 
+    max-width: 1440px;
+    margin: 0 auto; 
+}
+
+.home {
     height: 729px;
     background-image: url("../../../public/assets/home/desktop/image-hero.jpg");
     background-position: right bottom;
@@ -12,10 +19,17 @@ section{
     background-size: cover;
 
     @media screen and (max-width: $tablet) {
-       
+        background-position: 80% center;
+        background-size: cover;
+
+    }
+
+    @media screen and (max-width: $mobile) {
+        height: 600px;
     }
 }
 
-.home-img{
-    position: absolute;
+.home-info{
+    width: 379px;
+    height: 346px;
 }
