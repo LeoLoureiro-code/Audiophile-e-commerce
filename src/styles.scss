@@ -6,6 +6,7 @@
 }
 
 //Colors
+$background-hero: rgb(25, 25, 25);
 $background-primary: rgb(255, 255, 255);
 $background-secondary: rgb(16, 16, 16);
 $background-tertiary: rgb(241, 241, 241);
@@ -28,7 +29,9 @@ $mobile: 500px;
 .btn{
     height: 48px;
     width: 160px;
-    
+    border: none;
+    outline: none;
+    font-weight: 600;
 }
 
 .btn-primary{
