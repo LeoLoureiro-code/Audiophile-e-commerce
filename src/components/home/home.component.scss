@@ -1,18 +1,13 @@
 @import "../../styles.scss";
 
-:host {
-    display: block;
-    background-color: $background-hero;
-}
-
-section {
+.hero-container {
     width: 100%; 
-    max-width: 1440px;
+    background-color: $background-hero;
     margin: 0 auto; 
     font-family: $font-family;
 }
 
-.home {
+.hero {
     height: 729px;
     background-image: url("../../../public/assets/home/tablet/image-header.jpg");
     background-position: center right;
@@ -38,7 +33,7 @@ hr{
     }
 }
 
-.home-info{
+.hero-info{
     width: 379px;
     height: 346px;
     position: absolute;
@@ -90,7 +85,7 @@ h1{
     }
 }
 
-.home-info-paragraph{
+.hero-info-paragraph{
     color: $text-secondary;
     opacity: 0.8;
     line-height: 1.9rem;
