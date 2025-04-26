@@ -37,14 +37,24 @@ $mobile: 500px;
 .btn-primary{
     color: $text-secondary;
     background-color: $color-btn;
+    cursor: pointer;
 }
 
 .btn-secondary{
     color: $text;
     background-color: $background-primary;
+    cursor: pointer;
 }
 
 .btn-tertiary{
     color: $text;
     background-color: transparent;
+    border: none;
+    outline: none;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.btn-tertiary:hover{
+    color: $color-btn;
 }
