@@ -7,6 +7,11 @@
     justify-content: space-evenly;
     align-items: center;
     font-family: $font-family;
+
+    @media screen and (max-width: $tablet) {
+        flex-direction: column;
+        height: 800px;
+    }
 }
 
 .category-div{
@@ -18,6 +23,15 @@
     align-items: center;
     position: relative;
     border-radius: 10px;
+
+    @media screen and (max-width: $tablet) {
+        width: 50%;
+        margin-top: 7rem;
+    }
+
+    @media screen and (max-width: $mobile) {
+        width: 70%;
+    }
 }
 
 .category-img-div{
@@ -25,7 +39,11 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -80%)
+    transform: translate(-50%, -80%);
+
+    @media screen and (max-width: $tablet) {
+        transform: translate(-50%, -90%);
+    }
 }
 
 .category-img{
@@ -43,12 +61,22 @@
     background-color: $background-tertiary;
     align-self: flex-end;
     border-radius: 10px;
+
+
 }
 
 h3{
     margin-bottom: 2rem;
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 1rem;
+    }
 }
 
 button{
     margin-bottom: 2rem;
+
+    @media screen and (max-width: $tablet) {
+        margin-bottom: 1rem;
+    }
 }
