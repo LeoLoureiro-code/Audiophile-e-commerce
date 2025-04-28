@@ -105,3 +105,28 @@ button{
         transform: translate(-50%, -0%)
     }
 }
+
+.home-container{
+    padding: 0 6rem 0 6rem;
+}
+
+
+.principal-product{
+    width: 100%;
+    height: 560px;
+    background-color: $color-btn;
+    display: flex;
+    align-items: start;
+    margin-top: 7rem;
+    overflow: hidden;
+}
+
+.principal-product-img-div{
+    width: 410px;
+    transform: translateY(15%);
+}
+
+.principal-product-img{
+    height: auto;
+    width: 100%;
+}
