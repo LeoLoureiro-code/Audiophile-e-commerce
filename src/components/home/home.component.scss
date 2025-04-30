@@ -169,11 +169,11 @@ button{
     line-height: 2rem;
 }
 
-.secondary-product{
+.secondary-product {
     margin-top: 7rem;
-    height: 240px;
-    background-image: url("../../../public/assets/home/desktop/image-speaker-zx7.jpg");
-    background-size: contain;
+    height: 360px;
+    background-image: url("../../../public/assets/home/desktop/image-speaker-zx7-desktop.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -181,6 +181,18 @@ button{
     justify-content: center;
     align-items: start;
     font-family: $font-family;
+    background-color: $background-tertiary;
+    @media screen and (max-width: $laptop) {
+        height: 320px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        background-image: url("../../../public/assets/home/tablet/image-speaker-zx7-tablet.jpg");
+    }
+
+    @media screen and (max-width: $mobile) {
+        background-image: url("../../../public/assets/home/mobile/image-speaker-zx7-mobile.jpg");
+    }
 
     h2{
         margin-bottom: 2rem;
