@@ -53,17 +53,25 @@ h2{
     font-size: 15px;
 }
 
+//Fix this. Image does not show
 .store-img-div{
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    background-image: url("../../../public/assets/shared/desktop/image-best-gear-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 558px;
 
     @media screen and (max-width: $tablet) {
         height: 300px;
         margin-bottom: 2rem;
+        background-image: url("../../../public/assets/shared/tablet/image-best-gear-tablet.jpg");
     }
+
+    @media screen and (max-width: $mobile) {
+        background-image: url("../../../public/assets/shared/mobile/image-best-gear-mobile.jpg");
+    }
+
+}
 
     img{
         border-radius: 10px;
@@ -74,4 +82,3 @@ h2{
             height: 300px;
         }
     }
-}
