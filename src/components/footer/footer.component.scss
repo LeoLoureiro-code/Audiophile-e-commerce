@@ -14,6 +14,10 @@ footer{
     @media screen and (max-width: $tablet) {
         padding: 3rem 4rem 3rem 4rem;
     }
+
+    @media screen and (max-width: $mobile) {
+        padding: 3rem 4rem 3rem 1rem;
+    }
 }
 
 .description-div{
@@ -54,13 +58,12 @@ footer{
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    width: 450px;
 
     @media screen and (max-width: $tablet) {
         position: absolute;
-        left: 30px;
+        left: 0%;
         top: 105px;
-        max-width: 500px;
+        width: 100%;
     }
 }
 
